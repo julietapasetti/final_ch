@@ -1,72 +1,73 @@
 @import 'reset', 'color';
 
-
-
 body {
-  height:100%;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
+      height:100%;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
 }
 
 header {
-  height: 120px;
-  position: sticky;
-  top: 0;
-  padding: 20px;
-  background:map-get($colors,"white");
-  box-shadow: 0px 15px 63px -15px rgba(0, 0, 0, 0.5);
+      height: 120px;
+      position: sticky;
+      top: 0;
+      padding: 20px;
+      background:map-get($colors,"white");
+      box-shadow: 0px 15px 63px -15px rgba(0, 0, 0, 0.5);
 }
-.navbar {
-  background-color: var(--white-color);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
-  min-height: 100px;
-  }¨
 
-  .nav-item { color: map-get($colors,"white"); 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8em;
-    font-weight: bold;
-    
-    }
-    .nav-item:hover {color: map-get($colors,"white"); }
+/* Menu */
+    .navbar {
+      background-color: var(--white-color);
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+      min-height: 100px;
+      } 
 
-    .nav-toggler { font-size: 40px; }
-    .nav-toggler:focus { outline: none;}
-  
- .nav-link{
-  
-  color: map-get($colors,"white"); 
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8em;
-  font-weight: bold;
-      display: inline-block;
-      background-color:map-get($colors,"secondary");
-      letter-spacing: 1px;
-      margin-top: 80px;
-      margin-left: 10px;
-      padding: 5px;
-  
-      /* font */
+    .nav-item { color: map-get($colors,"white"); 
       font-family: 'Montserrat', sans-serif;
       font-size: 0.8em;
       font-weight: bold;
+    }
 
-      /* interacción */
-      transition: 0.03s ease;
-      color:map-get($colors,"white");
-      font-size: 11px;
-      text-decoration: none;
-      border-top: 0.5px solid;
-      border-bottom: 0.5px solid;
-      padding: 5px 0;
-      margin: 0 5px;
+    .nav-item:hover {color: map-get($colors,"white"); }
+
+    .navbar-toggler { font-size: 40px;}
+
+    .navbar-toggler:focus {outline: none;}
+  
+    .nav-link{
+          color: map-get($colors,"white"); 
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.8em;
+          font-weight: bold;
+          display: inline-block;
+          background-color:map-get($colors,"secondary");
+          letter-spacing: 1px;
+          margin-top: 80px;
+          margin-left: 10px;
+          padding: 5px;
+          text-align: center;
+  
+          /* font */
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.8em;
+          font-weight: bold;
+
+          /* interacción */
+          transition: 0.03s ease;
+          color:map-get($colors,"white");
+          font-size: 11px;
+          text-decoration: none;
+          border-top: 0.5px solid;
+          border-bottom: 0.5px solid;
+          padding: 5px 0;
+          margin: 0 5px;
       
         li {        
           background-color:map-get($colors,"primary");
           margin-left: 5px;
           padding: 1em;
           }
-        }
+    }
     
           .nav-link:hover {
           color: map-get($colors,"white");
@@ -74,70 +75,29 @@ header {
           border-bottom: 1px solid map-get($colors,"white");
           padding: 5px 0;
         }
+/* Fin Menu */
 
-   
-        /* Portfolio */
-
-h1 { font-size: 66px; font-weight: 700; line-height: 80px; }
-h2 { font-size: 48px; margin-bottom: 30px; text-decoration: none; }
-
-
-
-p {
-    font-size: 18px;
-    color: var(--dark-color);
-    opacity: .5;
-    line-height: 1.8;
-    margin-bottom: 0px;
-    text-decoration: none;
-}
-
-a:hover {text-decoration: none;}
-
+/* Texto Presentacion */
 .content-center {
   max-width: 800px;
-  margin: 0 auto 10px auto;
-  text-align: center;
+  margin: 50px 0px 50px 180px;
   text-decoration: none;
-}
-
-section { padding: 60px 0; }
-
-.portfolio-container {
-  position: relative;
-  overflow: hidden;
-  margin: 10px 0;
-  border-radius: 2px;
   
 }
 
-.portfolio-container img {
-  -moz-transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.portfolio-container:hover img {
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-
-
-.portfolio-details:hover h3 h5 {
-  margin-bottom: 0px;
-  text-decoration:none ;
-}
-
-/* Portfolio */
-
-
-.subtitle {
-  color:map-get($colors,"primary");
+h3 {
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
+  text-align: justify;
+  letter-spacing: 1px;
+  margin: 0px auto 10px auto;
+  font-size: 15px;
+
 }
+/* Fin Texto Presentacion */
+
+ 
+
+
 /* SLIDER */
 .slider {
 width: 100%;
@@ -187,35 +147,6 @@ overflow: hidden;
     margin-left: -300%;
 }
 }
-/* HOLA SECTION */
-.presentacion {
-padding: 50px;
-column-count: 2;
-column-gap: 50px;
-text-align: left;
-align-items: center;
-
-
-      &__title {
-      padding: 30px 0px 80px 0px;
-      color:map-get($colors,"primary");
-      font-family: 'Montserrat', sans-serif;
-      margin: auto;
-      }
-
-      &__par {
-      text-align: justify;  
-      color: map-get($colors,"gray");
-      margin: auto;
-      }
-
-      &__par-white {
-      color:map-get($colors,"secondary");
-      font-weight: bold;
-      margin: auto;
-      }
-
-}
 
 
 
@@ -240,64 +171,51 @@ h6 {
 
 /* FOOTER */
 
+/* TABLERO */
+#tablero .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+ }
 
-
-
-.tablero {
-display: grid;
-grid-template-columns: repeat(3, 250px);
-grid-gap: 5px;
-justify-content: center;
+#tablero img {
+  width: 100%;
+  height: auto;
 }
 
-.item {
-border-radius: 5px;
-padding: 10px;
-background:map-get($colors,"white");
-
+#tablero img:hover {
+  border: 5px solid map-get($colors,"white");
 }
 
-.item img {
-max-width: 100%;
+/* FIN TABLERO */
+
+/* CLIENTES */
+#clientes .col-lg-3 {
+  margin: 0 !important;
+  padding: 25px;
+ }
+
+#clientes img {
+  width: 100%;
+  height: auto;
 }
 
-.level-1 {
-grid-row-end: span 3;
+#clientes img:hover {
+  border: 5px solid map-get($colors,"white");
 }
 
-.level-2 {
-grid-row-end: span 2;
-}
-
-.level-3 {
-grid-row-end: span 1;
-}
-
-.galeria {
-  padding: 50px 0px 115px 0px;
-	width: 800px;
-	margin: auto;
-	overflow: hidden;
-	img {
-		float: left;
-		width: calc(25% - 30px);
-		margin: 15px;
-		height: auto;
-	}
-}
+/* FIN CLIENTES */
 
 /* CONTACTO */
 .formulario {
   background-image: url("../imagenes/web_jupa03.jpg");;
- background-size: 100vw 100vh;
-
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   padding: 75px 0px 75px 0px;
-
+  
 
   form {
   width: 450px;
@@ -307,6 +225,7 @@ grid-row-end: span 1;
   box-sizing: border-box;
   margin-top: 20px;
   border-radius: 7px;
+  max-width: 500px;
 }
 
   h2 {
@@ -397,7 +316,7 @@ $animationSpeed: 40s;
 	}
 	
 	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
+		animation: scroll $animationSpeed linear;
 		display: flex;
 		width: calc(250px * 14);
 	}
@@ -418,8 +337,6 @@ $animationSpeed: 40s;
 
 @media screen and (max-width:700px) {
   
-
- 
   .topmenu__nav li {
     display: block;
     float: none;
@@ -458,57 +375,11 @@ $animationSpeed: 40s;
 }
 
 
-/* SERVICIO SECTION */
-.servicio {
-  width: 100%;
-  height: auto;
-  padding: 20px 0px 20px 0px;
   
-  
-    &__container {
-    width: 95vw;
-    max-width: 1200px;
-    height: auto;
-    margin: auto;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-  
-    &__caja {
-    background-color:map-get($colors,"white");
-    margin: 20px 20px;
-    height: 250px;
-    width: 250px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    }
-  
-    &__caja p {
-    margin-top: 45%;
-    }
-  
-  }
-  .corporativo {
-  background-color:map-get($colors,"primary");
-  }
-  
-  .editorial {
-  background-color:map-get($colors,"green");
-  }
-  
-  .packaging {
-  background-color:map-get($colors,"violet");
-  }
-  
-  @media (max-width: 375px) { 
-    form {
-      width: 90%;
-    }
-
+  @media (max-width: 480px) { 
+    .formulario {width: 70%;}
+            }
+    
 @media (max-width: 575.98px) { 
 
     h1 { font-size: 40px; line-height: normal; }
@@ -525,8 +396,3 @@ $animationSpeed: 40s;
 }
 
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .portfolio-details h2 { font-size: 30px; }
-    .plans { min-width: unset; padding: 40px 20px;}
-  }
-}
