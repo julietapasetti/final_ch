@@ -98,16 +98,16 @@ header {
 /* Fin Menu */
 /* Texto Presentacion */
 .content-center {
-  max-width: 800px;
-  margin: 50px 0px 50px 180px;
-  text-decoration: none;
+  max-width: 100%;
+  margin: 60px 0 60px 0px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 1px;
-  margin: 0px auto 10px auto;
   font-size: 15px;
 }
 
@@ -245,12 +245,22 @@ h6 {
 /* FIN CLIENTES */
 /* CONTACTO */
 .formulario {
-  background-image: url("../imagenes/web_jupa03.jpg");
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: auto;
+  position: relative;
   width: 100%;
+  height: auto;
+  background: url("../imagenes/web_jupa03.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   padding: 75px 0px 75px 0px;
 }
@@ -264,7 +274,6 @@ h6 {
           box-sizing: border-box;
   margin-top: 20px;
   border-radius: 7px;
-  max-width: 500px;
 }
 
 .formulario h2 {
@@ -275,7 +284,7 @@ h6 {
   margin-bottom: 20px;
 }
 
-.formulario input {
+.formulario input, .formulario textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
@@ -308,6 +317,7 @@ h6 {
   cursor: pointer;
 }
 
+/* FIN CONTACTO */
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
@@ -318,7 +328,6 @@ h6 {
             transform: translateX(calc(-250px * 7));
   }
 }
-
 @keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
@@ -335,16 +344,15 @@ h6 {
   -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
           box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 150px;
+  width: 73%;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 980px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .slider-marcas::before, .slider-marcas::after {
-  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
   height: 100px;
   position: absolute;
   width: 200px;
@@ -420,8 +428,8 @@ h6 {
 }
 
 @media (max-width: 480px) {
-  .formulario {
-    width: 70%;
+  form {
+    width: 100%;
   }
 }
 
